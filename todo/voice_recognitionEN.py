@@ -17,15 +17,6 @@ client_secret = env('CLIENT_SECRET')
 client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(
     client_id, client_secret
 )
-# vlc_instance = vlc.Instance()
-# player = vlc_instance.media_player_new()
-# p = vlc.MediaPlayer(
-#     "https://p.scdn.co/mp3-preview/95970ac30265466027a6a9cb4ca18dbbfddab3d7?cid=774b29d4f13844c495f206cafdad9c86"
-# )
-# p.play()
-# time.sleep(30)  # startup time.
-# duration = player.get_length() / 100
-# mm, ss = divmod(duration, 60)
 
 spotify = spotipy.Spotify(
     client_credentials_manager=client_credentials_manager)
