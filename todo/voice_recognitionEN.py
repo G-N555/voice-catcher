@@ -43,7 +43,7 @@ def listenEN(request):
         audio = r.listen(source)
         # text = r.recognize_google(audio, language="ja-JP")
         text = r.recognize_google(audio, language="en-US").lower()
-        print(text)
+        # print(text)
         resultUS = r.recognize_google(audio, language="en-US").lower()
         # resultJP = r.recognize_google(audio, language="ja-JP")
         print(resultUS)
