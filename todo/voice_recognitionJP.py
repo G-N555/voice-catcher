@@ -50,7 +50,6 @@ def listenJP(request):
 
         if "ダメ" in resultJP:
             print("イジメ、ダメ、絶対")
-            resultText = resultJP
             p = vlc.MediaPlayer(
                 "https://p.scdn.co/mp3-preview/ba0658edbc00e0a47e0ef21a490429ae2b592ffc?cid=774b29d4f13844c495f206cafdad9c86"
             )
@@ -58,7 +57,6 @@ def listenJP(request):
             return render(request, "result.html", {'resultText': resultJP})
         elif "女々しい" in resultJP:
             print("livin on player!")
-            resultText = resultJP
             p = vlc.MediaPlayer(
                 "https://p.scdn.co/mp3-preview/7bfbeb604573ba7fddb1699db55dcec53afc17af?cid=774b29d4f13844c495f206cafdad9c86"
             )
