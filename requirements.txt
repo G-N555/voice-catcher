@@ -1,0 +1,13 @@
+certifi==2019.6.16
+chardet==3.0.4
+Django==2.1
+django-environ==0.4.5
+idna==2.8
+psycopg2==2.8.3
+PyAudio==0.2.11
+python-vlc==3.0.7110
+pytz==2019.2
+requests==2.22.0
+SpeechRecognition==3.8.1
+spotipy==2.4.4
+urllib3==1.25.3
