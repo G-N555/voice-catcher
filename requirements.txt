@@ -4,7 +4,6 @@ Django==2.2.4
 django-environ==0.4.5
 idna==2.8
 psycopg2==2.8.3
-PyAudio==0.2.11
 python-vlc==3.0.7110
 pytz==2019.2
 requests==2.22.0
