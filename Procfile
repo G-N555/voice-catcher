@@ -1,1 +1,1 @@
-web: gunicorn voice-picker.wsgi --log-file -
+web: gunicorn editdojo_project.wsgi --log-file -
