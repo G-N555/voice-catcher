@@ -1,1 +1,1 @@
-web: gunicorn voice-picker-project:app
+web: gunicorn voice-picker:app
