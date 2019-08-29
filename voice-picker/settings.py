@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import environ
-import dj_database_url
 
 env = environ.Env(DEBUG=(bool, False),)
 environ.Env.read_env('.env')
@@ -29,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost',
+ALLOWED_HOSTS = ['localhost',
                  'voice-picker-project.herokuapp.com']
 
 
@@ -79,8 +78,12 @@ WSGI_APPLICATION = 'voice-picker.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.path.join("test_django2"),
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

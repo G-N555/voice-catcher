@@ -20,7 +20,7 @@ from todo.voice_recognitionJP import listenJP
 from todo.voice_recognitionEN import listenEN
 
 urlpatterns = [
-    path('/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('todo/', todoView),
     path('addTodo/', addTodo),
     path('deleteTodo/<int:todo_id>/', deleteTodo),
