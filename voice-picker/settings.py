@@ -30,7 +30,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-                 'voice-picker-project.herokuapp.com']
+                 'voice-picker-project.herokuapp.com/todo']
 
 
 # Application definition
