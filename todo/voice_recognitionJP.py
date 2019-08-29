@@ -10,26 +10,6 @@ import environ
 env = environ.Env(DEBUG=(bool, False),)
 environ.Env.read_env('.env')
 
-# lz_uri = "spotify:artist:58lV9VcRSjABbAbfWS6skp"
-
-# client_id = env('CLIENT_ID')
-# client_secret = env('CLIENT_SECRET')
-# client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(
-#     client_id, client_secret
-# )
-
-# spotify = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-# results = spotify.artist_top_tracks(lz_uri)
-# print(results)
-# # for track in results["tracks"][:3]:
-# #     print("track    : " + track["name"])
-# #     print("audio    : " + track["preview_url"])
-# #     print("cover art: " + track["album"]["images"][0]["url"])
-# p = vlc.MediaPlayer(
-#     "https://p.scdn.co/mp3-preview/95970ac30265466027a6a9cb4ca18dbbfddab3d7?cid=774b29d4f13844c495f206cafdad9c86"
-# )
-# p.play()
-
 
 def listenJP(request):
 
