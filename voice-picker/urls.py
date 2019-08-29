@@ -21,7 +21,7 @@ from todo.voice_recognitionEN import listenEN
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('todo/', todoView),
+    path('/', todoView),
     path('addTodo/', addTodo),
     path('deleteTodo/<int:todo_id>/', deleteTodo),
     path('voiceen/', listenEN, name="listenEN"),
