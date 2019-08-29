@@ -1,1 +1,1 @@
-web: gunicorn editdojo_project.wsgi --log-file -
+web: gunicorn editdojo_project.py --log-file -
