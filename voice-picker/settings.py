@@ -29,8 +29,8 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost',
-                 'voice-picker-project.herokuapp.com/todo', 'https://voice-picker-project.herokuapp.com/voicejp']
+ALLOWED_HOSTS = ['localhost', 'voice-picker-project.herokuapp.com',
+                 'voice-picker-project.herokuapp.com/todo', 'voice-picker-project.herokuapp.com/voicejp']
 
 
 # Application definition
