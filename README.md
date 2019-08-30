@@ -9,7 +9,7 @@ get your voice and sounds music
   3. You get songs!
   
 # Requirement
-  speech-recognition ```pip install SpeechRecognition```
-  vlc ```pip3 install python-vlc```
-  Pyaudio ```pip install PyAudio```
-  Django ```pip install Django```
+  speech-recognition  : ```pip install SpeechRecognition```<br>
+  vlc                 : ```pip3 install python-vlc```<br>
+  Pyaudio             : ```pip install PyAudio```<br>
+  Django              : ```pip install Django```<br>
